@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Content in tabs</title>
+
+        <link rel="stylesheet" href="./css/tailwind.css" />
+    </head>
+    <body>
+        <div
+            class="
+                flex
+                items-center
+                justify-center
+                min-h-screen
+                p-10
+                bg-indigo-400
+            "
+        >
+            <div
+                class="
+                    w-3/4
+                    h-96
+                    relative
+                    my-24
+                    mx-auto
+                    bg-white
+                    rounded-3xl
+                    p-10
+                    overflow-hidden
+                "
+            >
+                <div
+                    class="
+                        tabs
+                        flex
+                        justify-around
+                        border-b-2
+                        text-center
+                        font-poppins font-semibold
+                    "
+                >
+                    <div
+                        class="active cursor-pointer text-indigo-600"
+                        id="btn-html"
+                        onclick="openHtml()"
+                    >
+                        <i class="fab fa-html5"></i> HTML
+                    </div>
+                    <div
+                        class="cursor-pointer"
+                        id="btn-css"
+                        onclick="openCss()"
+                    >
+                        <i class="fab fa-css3"></i> CSS
+                    </div>
+                    <div class="cursor-pointer" id="btn-js" onclick="openJs()">
+                        <i class="fab fa-js"></i> Javascript
+                    </div>
+                    <div
+                        class="cursor-pointer"
+                        id="btn-nodejs"
+                        onclick="openNodejs()"
+                    >
+                        <i class="fab fa-node-js"></i> Node Js
+                    </div>
+                    <div
+                        class="cursor-pointer"
+                        id="btn-react"
+                        onclick="openReact()"
+                    >
+                        <i class="fab fa-react"></i> React
+                    </div>
+                </div>
+                <div
+                    class="
+                        content
+                        absolute
+                        transform
+                        flex
+                        justify-center
+                        items-center
+                        font-ubuntu
+                        my-5
+                        space-x-5
+                        translate-x-0
+                    "
+                    id="cnt-html"
+                >
+                    <div class="content-left flex-1 space-y-5">
+                        <div class="font-medium">Learn HTML</div>
+                        <p class="text-sm">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Eos odio aliquid officiis dolorem possimus
+                            ducimus harum voluptates, quas non quis, nulla
+                            itaque temporibus dolorum aperiam repellendus
+                            voluptatum excepturi fuga voluptatem?
+                        </p>
+                    </div>
+                    <div class="content-right flex-1 object-cover">
+                        <img src="./assets/html.svg" alt="" />
+                    </div>
+                </div>
+
+                <div
+                    class="
+                        content
+                        absolute
+                        transform
+                        translate-x-full
+                        flex
+                        justify-center
+                        items-center
+                        font-ubuntu
+                        my-5
+                        space-x-5
+                    "
+                    id="cnt-css"
+                >
+                    <div class="content-left flex-1 space-y-5">
+                        <div class="font-medium">Learn CSS</div>
+                        <p class="text-sm">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Eos odio aliquid officiis dolorem possimus
+                            ducimus harum voluptates, quas non quis, nulla
+                            itaque temporibus dolorum aperiam repellendus
+                            voluptatum excepturi fuga voluptatem?
+                        </p>
+                    </div>
+                    <div class="content-right flex-1 object-cover">
+                        <img src="./assets/tailwind_css.svg" alt="" />
+                    </div>
+                </div>
+
+                <div
+                    class="
+                        content
+                        absolute
+                        transform
+                        translate-x-full
+                        flex
+                        justify-center
+                        items-center
+                        font-ubuntu
+                        my-5
+                        space-x-5
+                    "
+                    id="cnt-js"
+                >
+                    <div class="content-left flex-1 space-y-5">
+                        <div class="font-medium">Learn JS</div>
+                        <p class="text-sm">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Eos odio aliquid officiis dolorem possimus
+                            ducimus harum voluptates, quas non quis, nulla
+                            itaque temporibus dolorum aperiam repellendus
+                            voluptatum excepturi fuga voluptatem?
+                        </p>
+                    </div>
+                    <div class="content-right flex-1">
+                        <img src="./assets/javaScript.svg" alt="" />
+                    </div>
+                </div>
+
+                <div
+                    class="
+                        content
+                        absolute
+                        transform
+                        translate-x-full
+                        flex
+                        justify-center
+                        items-center
+                        font-ubuntu
+                        my-5
+                        space-x-5
+                    "
+                    id="cnt-nodejs"
+                >
+                    <div class="content-left flex-1 space-y-5">
+                        <div class="font-medium">Learn Nodejs</div>
+                        <p class="text-sm">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Eos odio aliquid officiis dolorem possimus
+                            ducimus harum voluptates, quas non quis, nulla
+                            itaque temporibus dolorum aperiam repellendus
+                            voluptatum excepturi fuga voluptatem?
+                        </p>
+                    </div>
+                    <div class="content-right flex-1">
+                        <img src="./assets/nodejs.svg" alt="" />
+                    </div>
+                </div>
+
+                <div
+                    class="
+                        content
+                        absolute
+                        transform
+                        translate-x-full
+                        flex
+                        justify-center
+                        items-center
+                        font-ubuntu
+                        my-5
+                        space-x-5
+                    "
+                    id="cnt-react"
+                >
+                    <div class="content-left flex-1 space-y-5">
+                        <div class="font-medium">Learn React</div>
+                        <p class="text-sm">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Eos odio aliquid officiis dolorem possimus
+                            ducimus harum voluptates, quas non quis, nulla
+                            itaque temporibus dolorum aperiam repellendus
+                            voluptatum excepturi fuga voluptatem?
+                        </p>
+                    </div>
+                    <div class="content-right flex-1">
+                        <img src="./assets/react.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://kit.fontawesome.com/1ae402c3f5.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="./scripts/script.js"></script>
+    </body>
+</html>
