@@ -18,6 +18,12 @@ function openHtml() {
     cntJs.style.transform = "translateX(100%)";
     cntNodejs.style.transform = "translateX(100%)";
     cntReact.style.transform = "translateX(100%)";
+    btnHtml.style.color = "#4f46e5";
+    btnCss.style.color = "#000000";
+    btnJs.style.color = "#000000";
+    btnNodejs.style.color = "#000000";
+    btnReact.style.color = "#000000";
+
 }
 
 function openCss() {
@@ -26,6 +32,11 @@ function openCss() {
     cntJs.style.transform = "translateX(100%)";
     cntNodejs.style.transform = "translateX(100%)";
     cntReact.style.transform = "translateX(100%)";
+    btnHtml.style.color = "#000000";
+    btnCss.style.color = "#4f46e5";
+    btnJs.style.color = "#000000";
+    btnNodejs.style.color = "#000000";
+    btnReact.style.color = "#000000";
 }
 
 function openJs() {
@@ -34,6 +45,11 @@ function openJs() {
     cntJs.style.transform = "translateX(0)";
     cntNodejs.style.transform = "translateX(100%)";
     cntReact.style.transform = "translateX(100%)";
+    btnHtml.style.color = "#000000";
+    btnCss.style.color = "#000000";
+    btnJs.style.color = "#4f46e5";
+    btnNodejs.style.color = "#000000";
+    btnReact.style.color = "#000000";
 }
 
 function openNodejs() {
@@ -42,6 +58,11 @@ function openNodejs() {
     cntJs.style.transform = "translateX(100%)";
     cntNodejs.style.transform = "translateX(0)";
     cntReact.style.transform = "translateX(100%)";
+    btnHtml.style.color = "#000000";
+    btnCss.style.color = "#000000";
+    btnJs.style.color = "#000000";
+    btnNodejs.style.color = "#4f46e5";
+    btnReact.style.color = "#000000";
 }
 
 function openReact() {
@@ -50,4 +71,9 @@ function openReact() {
     cntJs.style.transform = "translateX(100%)";
     cntNodejs.style.transform = "translateX(100%)";
     cntReact.style.transform = "translateX(0)";
+    btnHtml.style.color = "#000000";
+    btnCss.style.color = "#000000";
+    btnJs.style.color = "#000000";
+    btnNodejs.style.color = "#000000";
+    btnReact.style.color = "#4f46e5";
 }
